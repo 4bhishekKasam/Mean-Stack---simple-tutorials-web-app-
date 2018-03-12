@@ -1,0 +1,21 @@
+
+<div class="sidenav">
+  <div *ngFor="let i of dataList | slice:8:12" style="color:white">
+           <a href="#" >{{i.topic}}</a>
+       <hr>
+  </div>
+</div>
+
+  <!-- <div class="container" style="margin-left:60px;border:1px solid black;position:relative">
+      <app-cchild></app-cchild>
+ </div> -->
+
+  <div class='container' >
+   <!--   <div class="col-md-2">&nbsp;&nbsp;</div> -->
+        <div *ngFor="let i of dataList | slice:8:12" style="width:450px;margin-left:25%">
+           <div class="row">
+              <b>    {{i.info}} </b>
+         </div>
+         <br>
+    </div>
+ </div>

@@ -24,7 +24,7 @@ mongoose.connection.on('error',(err)=>{
     console.log(err);
 });
 
-const port = parseInt(process.env.PORT || 3000);
+const port = parseInt(process.env.PORT || 8080);
 
 app.listen(port, function() {
     console.log("SERVER Listening on PORT =" + port);
